@@ -1,26 +1,11 @@
-const inquirer = require('inquirer');
+const cli = require('./lib/cli')
+const shapes = require('./lib/shapes')
 
-const questions = [
-    {
-        type: 'input',
-        message: 'Enter 3 characters for the logo text',
-        name: 'text',
-    },
-    {
-        type: 'list',
-        message: 'Choose the shape you would like to use',
-        name: 'shape',
-        choices: ['Circle', 'Triangle', 'Square']
-    },
-    {
-        type: 'list', 
-        message: 'Choose a color for your shape',
-        name: 'color',
-        choices: ['Green', 'Blue', 'Red', 'Yellow', 'Purple']
-    }
-]
+const svgTemplate = 
+`<svg version="1.1"
+width="300" height="200"
+xmlns="http://www.w3.org/2000/svg">
 
-inquirer.prompt(questions)
-.then((response) => {
-    console.log(response);
-})
+${cli.shape.render()}
+
+</svg>`
