@@ -29,5 +29,3 @@ Once the program is running, the command line will provide a series of prompts t
 [Click here to view test file](./lib/shapes.test.js)
 
 ## Example
-
-![App walkthrough video](./examples/SVG_Generator_Walkthrough.mp4)
