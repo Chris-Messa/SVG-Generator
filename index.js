@@ -35,17 +35,23 @@ const questions = [
 
 function generateSVG(shape) {
     
-    const svgTemplate = `<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    const svgTemplate = `<html>
+    <head>
+      <title>SVG Example</title>
+    </head>
+    <body>
+      <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  
+          ${shape.render()}
+    </svg>
+    </body>
+    </html>`
 
-        ${shape.render()}
-  </svg>`
-
-    fs.writeFile('shape.svg', svgTemplate, (err, data) => {
+    fs.writeFile('index.html', svgTemplate, (err, data) => {
         err ? console.log(err) : console.log(data)
     })
+
 }
-
-
 
 inquirer.prompt(questions)
 .then((response) => {

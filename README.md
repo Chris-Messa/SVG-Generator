@@ -10,6 +10,7 @@ This is a command line application that allows the user to generate an SVG file 
 - [Usage](#usage)
 - [MIT](#mit)
 - [Tests](#tests)
+- [Example](#example)
 
 ## Installation
 
@@ -26,3 +27,7 @@ Once the program is running, the command line will provide a series of prompts t
 ## Tests
 
 [Click here to view test file](./lib/shapes.test.js)
+
+## Example
+
+![App walkthrough video](./examples/SVG_Generator_Walkthrough.mp4)
