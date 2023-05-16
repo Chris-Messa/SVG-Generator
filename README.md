@@ -29,3 +29,6 @@ Once the program is running, the command line will provide a series of prompts t
 [Click here to view test file](./lib/shapes.test.js)
 
 ## Example
+
+https://github.com/Chris-Messa/SVG-Generator/assets/39140839/d7e65101-fe54-4584-8faf-6c9af0118280
+
