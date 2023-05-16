@@ -2,11 +2,20 @@ const inquirer = require('inquirer');
 const shapes = require('./lib/shapes');
 const fs = require('fs');
 
+const validateInput = (input) => {
+    if (input.length ===3) {
+        return true;
+    } else {
+        return 'Text must contain exactly 3 characters'
+    }
+}
+
 const questions = [
     {
         type: 'input',
         message: 'Enter 3 characters for the logo text',
         name: 'text',
+        validate: validateInput
     },
     {
         type: 'list',
