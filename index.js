@@ -52,13 +52,13 @@ inquirer.prompt(questions)
     let shape = '';
     switch(response.shape) {
         case 'Circle':
-        shape = new shapes.Circle(response.color, response.text)
+        shape = new shapes.Circle(response.color.toLowerCase(), response.text)
             break;
         case 'Triangle':
-        shape = new shapes.Triangle(response.color, response.text)
+        shape = new shapes.Triangle(response.color.toLowerCase(), response.text)
             break;
         case 'Square':
-        shape = new shapes.Square(response.color, response.text)
+        shape = new shapes.Square(response.color.toLowerCase(), response.text)
             break; 
     }
     return generateSVG(shape)
